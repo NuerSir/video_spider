@@ -1,8 +1,11 @@
 FROM php:7.4-apache
 
-# 安装curl扩展
-RUN apt-get update && apt-get install -y curl \
-    && docker-php-ext-install curl
+# 步骤 1: 更新软件包列表
+RUN apt-get update
+# 步骤 2: 安装 curl 软件包
+RUN apt-get install -y curl
+# 步骤 3: 安装 PHP curl 扩展
+RUN docker-php-ext-install curl
 
 # 设置工作目录
 WORKDIR /var/www/html
