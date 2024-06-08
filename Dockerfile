@@ -18,4 +18,4 @@ COPY src/video_spider.php /var/www/html/src/
 COPY index.php /var/www/html/
 
 # 设置入口文件
-CMD ["nginx", "-g", "daemon off;"]
+# CMD ["nginx", "-g", "daemon off;"]
