@@ -1,4 +1,4 @@
-FROM erseco/alpine-php-webserver:latest
+FROM erseco/alpine-php-webserver
 
 # 安装 curl 软件包和 PHP curl 扩展
 RUN apk add --no-cache curl
