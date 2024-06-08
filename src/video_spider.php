@@ -39,7 +39,8 @@ class Video {
         }
         
         // 关于这里的第三方接口问题 请查看 https://github.com/5ime/video_spider#faq
-        $url = 'https://tiktok.iculture.cc/X-Bogus';
+        // https://tiktok.iculture.cc/X-Bogus
+        $url = 'https://douyin-sign.abbt.xyz';
         $data = json_encode(array('url' => 'https://www.douyin.com/aweme/v1/web/aweme/detail/?aweme_id=' . $id[0] . '&aid=1128&version_name=23.5.0&device_platform=android&os_version=2333','user_agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'));
         $header = array('Content-Type: application/json');
         $url = json_decode($this->curl($url, $header, $data), true)['param'];
