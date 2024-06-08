@@ -11,7 +11,7 @@ WORKDIR /var/www/html
 RUN mkdir src
 
 # 复制文件到容器
-COPY video_spider.php /var/www/html/src/
+COPY src/video_spider.php /var/www/html/src/
 COPY index.php /var/www/html/
 COPY .htaccess /var/www/html/
 
