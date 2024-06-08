@@ -1,7 +1,6 @@
-FROM erseco/alpine-php-webserver:3.19.1
+FROM erseco/alpine-php-webserver:latest
 
 # 安装 curl 软件包和 PHP curl 扩展
-RUN apk update
 RUN apk add --no-cache curl
 RUN docker-php-ext-install curl
 
