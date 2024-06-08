@@ -4,9 +4,8 @@ FROM erseco/alpine-php-webserver
 USER root
 RUN apk update --no-cache
 
-# 安装 curl 软件包和 PHP curl 扩展
+# 安装 curl 软件包
 RUN apk add --no-cache curl
-RUN docker-php-ext-install curl
 
 # 设置工作目录
 WORKDIR /var/www/html
