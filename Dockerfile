@@ -5,7 +5,7 @@ RUN apt-get update
 # 步骤 2: 安装 curl 软件包
 RUN apt-get install -y curl
 # 步骤 3: 安装 PHP curl 扩展
-RUN docker-php-ext-install curl
+# RUN docker-php-ext-install curl
 
 # 设置工作目录
 WORKDIR /var/www/html
